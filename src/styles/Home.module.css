@@ -41,7 +41,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(1, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
@@ -275,4 +275,9 @@
   to {
     transform: rotate(0deg);
   }
+}
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
 }
