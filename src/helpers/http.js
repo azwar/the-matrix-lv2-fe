@@ -1,5 +1,4 @@
-import { API_URL } from "@/constants";
-
+import { API_URL } from "@/constants"
 const { default: axios } = require("axios");
 
 export const httpClent = (token) => {

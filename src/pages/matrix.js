@@ -1,15 +1,12 @@
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { findCoordinate } from "@/services/MatrixService";
 import BaseLayout from "@/components/BaseLayout";
-import SimpleAuthorizer from "@/components/SimpleAuthorizer";
-import Link from "next/link";
-import { useAccount, useDisconnect } from "wagmi";
 import { getSession, signOut } from "next-auth/react";
-import nookies from 'nookies'
+import nookies from 'nookies';
 
 function Matrix({ user }) {
   const router = useRouter();

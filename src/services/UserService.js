@@ -1,5 +1,3 @@
-import Router from "next/router";
-import { useAccount, useDisconnect } from "wagmi";
 const { httpClent } = require("@/helpers/http");
 
 export function login(username, password) {
